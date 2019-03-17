@@ -1,0 +1,31 @@
+<div class="add">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-8 mb-3 col-sm-12">
+      <h2>Add</h2>
+        <label>name:
+          <input [(ngModel)]="shopN" placeholder="name" class="form-control"/>
+        </label><br>
+        <label>images:
+          <input [(ngModel)]="shopI" placeholder="image" class="form-control"/>
+        </label><br>
+        <label>price:
+          <input [(ngModel)]="shopP" placeholder="price" class="form-control"/>
+        </label><br>
+      <button (click)="add(shopN,shopI,shopP); shopN= null; shopI= null; shopP= null" class="button button-add" routerLink="/animations">
+        <span>add</span>
+      </button>
+      </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="shop_item">
+        <div class="shop_image" *ngIf="shopI"><img src="{{shopI}}" alt="shops"></div>
+        <div class="shop_image" *ngIf="!shopI"><img src="assets/images/plus-png-image-68605.png" alt="shops"></div>
+        <div class="shop_title_container text-center">
+          <div class="shop_title" *ngIf="shopN"><h1>{{shopN}}</h1></div>
+          <div class="shop_price" *ngIf="shopP">${{shopP}}</div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+</div>

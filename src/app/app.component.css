@@ -1,0 +1,89 @@
+#navbar {
+    background: black;
+    padding: 8px 0;
+    margin-bottom: 60px;
+}
+#navbar ul {
+    list-style: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+#navbar ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+#navbar .logo h1 {
+    font-size: 1.2em;
+    color: #999;
+    margin-bottom: 0;
+}
+#navbar ul li a {
+    color: #908f8f;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+#navbar ul li a:hover{
+    color: white;
+}
+
+#navbar ul li a.active {
+    color: white !important;
+}
+#navbar .flaticon-shopping-cart {
+    position: relative;
+}
+#navbar .flaticon-shopping-cart .dropdown-count {
+    background-color: #ec5252;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 10px;
+    right: auto;
+    line-height: 1.43;
+    min-width: 19px;
+    padding: 2px 6px;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    text-shadow: none;
+    top: -10px;
+    vertical-align: text-top;
+    white-space: nowrap;
+    z-index: 1;
+}
+@media (max-width: 992px) {
+    #navbar{
+        margin-bottom: 30px;
+    }
+    #footer ul h4 {
+        margin-top: 15px;
+    }
+}
+#footer {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #adadad;
+    bottom: 0;
+}
+#footer ul {
+    list-style: none;
+}
+#footer ul h4 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+#footer ul li {
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+#footer ul li a {
+    color: #adadad;
+    transition: 0.2s;
+}
+#footer ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}

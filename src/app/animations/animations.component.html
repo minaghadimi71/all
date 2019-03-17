@@ -1,0 +1,22 @@
+ <div class="animations">
+<div class="container">
+    <app-add></app-add>
+        <div class="row">
+            <div *ngFor="let shop of shops" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="shop_item">
+                    <div class="shop_image"><img src="{{shop.image}}" alt="shops"></div>
+                    <div class="shop_title_container text-center">
+                        <div class="shop_title"><h1>{{shop.name}}</h1></div>
+                        <div class="shop_price">${{shop.pr}}</div>
+                        <div class="shop_price">id: {{shop.id}}</div>
+                    </div>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item" ><button class="button shop_button" routerLink="/edit/{{shop.id}}"><span>Edit</span></button></li>
+                        <li class="list-inline-item" ><button class="button shop_button" (click)="delete(shop)"><span>delete</span></button></li>
+                        <li class="list-inline-item" ><button class="button shop_button" (click)="buy(shop)"><span>buy</span></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ </div>
+ </div>

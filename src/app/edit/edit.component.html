@@ -1,0 +1,31 @@
+<div class="edit" *ngFor="let shop of shope">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+  <h2>{{shop.name | uppercase}} Edit</h2>
+  <div class="id"><span>id: </span>{{shop.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="shop.name" placeholder="name" class="form-control"/>
+    </label><br>
+    <label>images:
+      <input [(ngModel)]="shop.image" placeholder="image" class="form-control"/>
+    </label><br>
+    <label>price:
+      <input [(ngModel)]="shop.pr" placeholder="price" class="form-control"/>
+    </label><br>
+    <button class="button" routerLink="/animations"><span>back</span></button>
+  </div>
+</div>
+    <div class="col-md-6">
+      <div class="shop_item">
+        <div class="shop_image"><img src="{{shop.image}}" alt="shops"></div>
+        <div class="shop_title_container text-center">
+          <div class="shop_title"><h1>{{shop.name}}</h1></div>
+          <div class="shop_price">${{shop.pr}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

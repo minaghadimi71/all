@@ -1,0 +1,66 @@
+.add{
+    padding-bottom: 60px;
+}
+.add label {
+    margin: .75em 0;
+    color: #0056b3;
+    font-weight: bold;
+}
+input {
+    font-size: 1em;
+    padding-left: .4em;
+}
+.id{
+    margin: .5em 0;
+    color: #0056b3;
+    font-weight: bold;
+
+}
+h2{
+    color: #0056b3;
+}
+
+
+.shop_item
+{
+    background: #f1f6f7;
+    padding: 40px;
+    border: 10px solid gainsboro;
+}
+.shop_image
+{
+    width: 100%;
+    text-align: center;
+}
+.shop_image img
+{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.shop_title_container
+{
+    padding: 20px 0;
+}
+.shop_title h1
+{
+    font-size: 36px;
+    color: #717171;
+    line-height: 1.2;
+}
+.shop_price
+{
+    font-size: 25px;
+    font-weight: 500;
+    color: #717171;
+    margin-top: 12px;
+    line-height: 0.75;
+}
+.button-add{
+    width: 100px;
+    height: 63px;
+}
+.button-add span{
+    line-height: 63px;
+    font-size: 14px;
+}

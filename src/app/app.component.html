@@ -1,0 +1,57 @@
+<div id="navbar">
+  <div class="container">
+    <div class="row">
+      <ul>
+        <li class="logo"><h1>{{title |uppercase}}</h1></li>
+        <li> <a routerLink="/animations" routerLinkActive="active">Animations</a></li>
+        <li><a routerLink="/add" routerLinkActive="active">Add</a></li>
+        <li><a routerLink="/user" routerLinkActive="active"><i class="flaticon-shopping-cart">
+          <span class="dropdown-count">{{t.length}}</span>
+        </i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <ul>
+          <li><h4>Subtypes</h4></li>
+          <li><a href="">Studio</a></li>
+          <li><a href="">Start up</a></li>
+          <li><a href="">Education</a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-3 ">
+        <ul>
+          <li><h4>Sales Guide</h4></li>
+          <li><a href="">Required files</a></li>
+          <li><a href="">Standards</a> </li>
+          <li><a href="">Terms and conditions of sale</a> </li>
+          <li><a href="">Medals and privileges</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li><h4>Purchase Guide</h4></li>
+          <li><a href="">How to buy?</a></li>
+          <li><a href="">Payment methods</a></li>
+          <li><a href="">Expenses refund terms</a></li>
+          <li><a href="">Terms of purchase</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li><h4>Contact Us</h4></li>
+          <li>Phone number: 09108496975</li>
+          <li>Email: minaghadimi71@gmail.com</li>
+          <li>Telegram: @min-gh71</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
